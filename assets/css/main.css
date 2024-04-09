@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 10px;
+    color: #F1F2F4;
+}
+
+body {
+    background-color: #0B0C0E;
+    height: 100vh;
+    user-select: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.button {
+    color: #E2E4E9;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+}
+
+.column__links-group {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.column__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.column__text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 6.4rem 0;
+}
+
+.column__title {
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.column__button--telegram, .column__button--vk {
+    transition: background-color 0.25s ease;
+}
+
+.column__button--ds {
+    background-color: #5561F5;
+}
+
+.column__button--ds:hover {
+    background-color: #4552E9;
+}
+
+.column__button--telegram {
+    background-color: #30A3E6;
+}
+
+.column__button--telegram:hover {
+    background-color: #118cd3;
+}
+
+.column__links-group {
+    display: flex;
+}
+
+.column__text {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #8D95A5;
+    line-height: 1.9rem;
+}
+
+.column__image {
+    border-radius: 0.8rem;
+    width: 100%;
+
+    margin-bottom: 1.2rem;
+}
+
+@media screen and (min-height: 900px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .column__links-group {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-height: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .column__title {
+        margin-top: 30px;
+    }
+
+    .column__links-group {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-height: 400px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .column__logo {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .column__title {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    .column__text {
+        margin-left: 50px;
+    }
+    .column__links-group {
+        justify-content: center;
+    }
+}
+
